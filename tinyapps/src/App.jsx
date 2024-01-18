@@ -1,18 +1,19 @@
-import './App.css'
-import HeaderComponent from './components/homepage/HeaderComponent';
+import Navbar from './components/homepage/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePageComponent from './components/homepage/HomePageComponent';
-import LoginSignup from './components/login/LoginSignup';
+import ContactPage from './components/homepage/ContactPage';
 function App() {
 
   return (
     <>
       <BrowserRouter>
-      <HeaderComponent/>
-        <Routes>
+      <div className="flex flex-col min-h-screen">
+        <Navbar/>
+          <Routes>
           <Route path="/" element={<HomePageComponent />} />
-          <Route path="/login-page" element={<LoginSignup />} />
-        </Routes>
+          <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+      </div>
       </BrowserRouter>
       
     </>
