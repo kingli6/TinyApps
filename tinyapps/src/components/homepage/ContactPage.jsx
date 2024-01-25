@@ -12,7 +12,7 @@ const ContactPage = () => {
             Welcome to my website! I&apos;m Jonathan, a recent graduate in .Net System Development from ITH Yrkeshögskolan (2024). Living in Örnsköldsvik, I&apos;m a father to a adorable 5-year-old and an avid explorer of our civilization&apos;s development.
           </p>
           <p>
-          IT, for me, is not just a career but a window to vast knowledge that I fear I may never have time to fully explore. Due to my unique background I&apos;ve adopted a stance which lets me feel compasion and admiration towards those that touch the essence of life and its wonders. So I want to place myself where I can be apart of this magic.          </p>
+          IT for me, is not just a career but a window to vast knowledge that I fear I may never have time to fully explore. Due to my unique background I&apos;ve adopted a stance which lets me feel compasion and admiration towards those that touch the essence of life and its wonders. So I want to place myself where I can be apart of this magic.          </p>
           <p>
           While I educate myself in the arts of programming, I&apos;m also learning data analytics, improving writing and problem-solving skills, and honing my newfound side gig as a FloorBall referee (Innebandy domare).          </p>
         </div>
@@ -56,10 +56,24 @@ const ContactPage = () => {
             <a href="https://noq-cms.web.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500">
             NoQ websidan
             </a>
+            
         </div>
+        {/* //add the mvc project */}
         {/* Repeat for other projects */}
         </div>
-        
+
+        <div>
+            <h2 className="text-2xl font-semibold mb-2">Achievements</h2>
+            <h3 className="text-xl font-semibold">Mastered the art of healthy cooking</h3>
+            <p>Where I can manage a super healthy meal while maintining cost and longevity of the meal</p>
+            <h3 className="text-xl font-semibold">Mastered the art of exercising</h3>
+            <p>Where I manage a balance between cardio and strength training, while focusing on flexibilty, speed and precision.</p>
+            <p>But sadly it is hard to devote yourself so you turn out like BruceLee. I do not have the time.</p>
+            <h3 className="text-xl font-semibold">Developing skills on how to foster a child.</h3>
+            <p>It is an ongoing achievement.</p>
+
+        </div>
+
         <div>
           <h2 className="text-2xl font-semibold mb-2">Contact Information</h2>
           <p>

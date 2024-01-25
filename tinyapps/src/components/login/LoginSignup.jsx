@@ -38,7 +38,7 @@ const LoginSignup = () => {
 
   return (
     <div>
-      <div>
+      {/* <div>
         <h3>Register User</h3>
         <input placeholder="Email..."
           onChange={(event) => setRegisterEmail(event.target.value)}
@@ -48,7 +48,7 @@ const LoginSignup = () => {
         />
 
         <button onClick={register}>Create User</button>
-      </div>
+      </div> */}
 
       <div>
         <h3>Login</h3>
