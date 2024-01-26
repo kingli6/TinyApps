@@ -9,7 +9,8 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "firebase-login": "firebase login",
-    "firebase-init": "firebase init"
+    "firebase-init": "firebase init",
+    "firebase-deploy": "firebase deploy"
   },
   "dependencies": {
     "firebase": "^10.7.1",
