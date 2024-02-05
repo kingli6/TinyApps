@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Dropdown from 'react-dropdown';
+import { useState } from 'react';
 
 const Navbar = () => {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -16,21 +16,8 @@ const Navbar = () => {
         <Link to="/" className="text-white font-bold text-lg">
           Home
         </Link>
-        <div className="flex items-center">
-          <Link to="/" className="text-yellow-300 font-bold text-lg mr-4">
-            <Dropdown
-              o
-              ptions={options}
-              onChange={handleDropdownChange}
-              value={selectedOption}
-              placeholder="TinyApps"
-            />
-          </Link>
-        </div>
+        
         <div className="flex space-x-4">
-          <Link to="/login" className="text-white">
-            Empty
-          </Link>
           <Link to="/contact" className="text-white">
             Contact
           </Link>

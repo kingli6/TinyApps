@@ -2,8 +2,8 @@ import Navbar from './components/homepage/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePageComponent from './components/homepage/HomePageComponent';
 import ContactPage from './components/homepage/ContactPage';
-import LoginSignup from './components/login/LoginSignup';
 import MemoryGameComponent from './components/memoryGame/MemoryGameComponent';
+import WorkOutClock from './components/workOutClock/WorkOutClock';
 function App() {
   return (
     <>
@@ -13,8 +13,8 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePageComponent />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/login" element={<LoginSignup />} />
             <Route path="/memory-game" element={<MemoryGameComponent />} />
+            <Route path="/work-clock" element={<WorkOutClock />} />
           </Routes>
         </div>
       </BrowserRouter>

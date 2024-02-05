@@ -4,6 +4,7 @@ const MemoryGameComponent = () => {
     <div>
       {/* Memory game UI goes here */}
       <h1>Memory Game</h1>
+      <p>Coming sooooon</p>
     </div>
   );
 };

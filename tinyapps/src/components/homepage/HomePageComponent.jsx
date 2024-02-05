@@ -1,10 +1,10 @@
-
+import BrowseAppsSection from './BrowseAppsSection';
 const HomePageComponent = () => {
   
   return (
     
     <div>
-      <h2>Home</h2>
+      <BrowseAppsSection/>
     </div>
   )
 }
