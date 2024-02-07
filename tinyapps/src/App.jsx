@@ -5,9 +5,11 @@ import ContactPage from './components/homepage/ContactPage';
 import MemoryGameComponent from './components/memoryGame/MemoryGameComponent';
 import WorkOutClock from './components/workOutClock/WorkOutClock';
 import ReactBasics from './components/homepage/basicsReact/ReactBasics'
+import { CartProvider } from './components/homepage/basicsReact/services/CartContext';
 function App() {
   return (
     <>
+    <CartProvider>
       <BrowserRouter>
         <div className="flex flex-col min-h-screen">
           <Navbar />
@@ -22,6 +24,7 @@ function App() {
           
         </div>
       </BrowserRouter>
+      </CartProvider>
     </>
   );
 }

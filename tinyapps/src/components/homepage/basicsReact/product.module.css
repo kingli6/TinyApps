@@ -1,0 +1,31 @@
+.productlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+    border: black;
+  }
+  
+  .card {
+    width: calc(33.33% - 20px); /* Adjust the width of each card */
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5; /* Choose a suitable color for the border */
+  padding: 20px; /* Add padding to create space between the content and the border */
+
+  }
+  .cardContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .buyButton {
+    background-color: #4CAF50; /* Add your desired button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

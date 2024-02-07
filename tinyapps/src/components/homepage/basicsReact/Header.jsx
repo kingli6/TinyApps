@@ -1,5 +1,9 @@
 import headerStyles from "./header.module.css";
+import CartContext from "./services/CartContext";
+import { useContext } from "react";
+
 const Header = () => {
+  const {cartItems} = useContext(CartContext);
   return (
     <div className={headerStyles.headerContainer}>
         <div className={headerStyles.logo}>Home?</div>
@@ -10,6 +14,7 @@ const Header = () => {
         <div className={headerStyles.cart}>
             <img src={""} alt="" />
             <span>Cart</span>
+            <span>{cartItems.length}</span>
         </div>
         <div className={headerStyles.login}>Login</div>
     </div>
