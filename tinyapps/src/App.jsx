@@ -4,7 +4,7 @@ import HomePageComponent from './components/homepage/HomePageComponent';
 import ContactPage from './components/homepage/ContactPage';
 import MemoryGameComponent from './components/memoryGame/MemoryGameComponent';
 import WorkOutClock from './components/workOutClock/WorkOutClock';
-import HeaderComp from './components/homepage/basicsReact/Header'
+import ReactBasics from './components/homepage/basicsReact/ReactBasics'
 function App() {
   return (
     <>
@@ -17,7 +17,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/memory-game" element={<MemoryGameComponent />} />
             <Route path="/work-clock" element={<WorkOutClock />} />
-            <Route path="/reactBasics" element={<HeaderComp />} />
+            <Route path="/reactBasics" element={<ReactBasics />} />
           </Routes>
           
         </div>

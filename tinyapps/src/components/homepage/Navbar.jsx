@@ -8,9 +8,7 @@ const Navbar = () => {
         <Link to="/" className="text-white font-bold text-lg">
           Home
         </Link>
-        <Link to="/reactBasics" className="text-white font-bold text-lg">
-          reactBasics
-        </Link>
+    
         <div className="flex space-x-4">
           <Link to="/contact" className="text-white">
             Contact

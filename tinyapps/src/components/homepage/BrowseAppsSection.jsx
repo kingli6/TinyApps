@@ -12,6 +12,9 @@ const BrowseAppsSection = () => {
           <Link to="/memory-game" className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
             Memory
           </Link>
+          <Link to="/reactBasics" className="bg-yellow-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+            WebPageTemplate
+          </Link>
           {/* Add more buttons for other apps as needed */}
         </div>
       </div>
