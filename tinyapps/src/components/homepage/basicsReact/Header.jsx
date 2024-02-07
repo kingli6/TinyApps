@@ -1,6 +1,7 @@
 import headerStyles from "./header.module.css";
 import CartContext from "./services/CartContext";
 import { useContext } from "react";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const {cartItems} = useContext(CartContext);
@@ -11,11 +12,11 @@ const Header = () => {
             <div className={headerStyles.navItem}>ItemB</div>
             <div className={headerStyles.navItem}>ItemC</div>
         </div>
-        <div className={headerStyles.cart}>
+        <Link to="/checkout" className={headerStyles.cart}>
             <img src={""} alt="" />
             <span>Cart</span>
             <span>{cartItems.length}</span>
-        </div>
+        </Link>
         <div className={headerStyles.login}>Login</div>
     </div>
   )

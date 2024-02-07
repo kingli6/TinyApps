@@ -6,6 +6,7 @@ import MemoryGameComponent from './components/memoryGame/MemoryGameComponent';
 import WorkOutClock from './components/workOutClock/WorkOutClock';
 import ReactBasics from './components/homepage/basicsReact/ReactBasics'
 import { CartProvider } from './components/homepage/basicsReact/services/CartContext';
+import CheckOutComponent from './components/homepage/basicsReact/CheckOutComponent';
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
             <Route path="/memory-game" element={<MemoryGameComponent />} />
             <Route path="/work-clock" element={<WorkOutClock />} />
             <Route path="/reactBasics" element={<ReactBasics />} />
+            <Route path="/checkout" element={<CheckOutComponent />} />
           </Routes>
           
         </div>
