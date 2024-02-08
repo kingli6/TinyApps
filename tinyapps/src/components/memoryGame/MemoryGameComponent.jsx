@@ -1,10 +1,27 @@
+import * as S from "./assets/styles/globalStyle"
+import Card from "./components/Card"
+import useCards from "./hooks/useCards"
+import "animate.css"
+import { StyleSheetManager } from "styled-components"
+import isPropValid from "@emotion/is-prop-valid"
+import { GlobalStyle } from "./assets/styles/globalStyle"
+
+
 const MemoryGameComponent = () => {
-  // Memory game logic and UI
+  const { cards, handleClick } = useCards()
+
   return (
     <div>
-      {/* Memory game UI goes here */}
-      <h1>Memory Game</h1>
-      <p>Coming sooooon</p>
+        <StyleSheetManager shouldForwardProp={isPropValid}>
+        <GlobalStyle />
+      <S.Logo />
+      <S.CardContainer>
+      {cards.map((c, i) => (
+          <Card key={i} select={() => handleClick(i)} symbol={c.symbol} status={c.status} />
+        ))}
+      </S.CardContainer>
+      <S.RestartButton onClick={() => location.reload()}>RESTART ✓</S.RestartButton>
+      </StyleSheetManager>
     </div>
   );
 };

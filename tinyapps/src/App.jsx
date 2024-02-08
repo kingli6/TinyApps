@@ -18,10 +18,13 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePageComponent />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/memory-game" element={<MemoryGameComponent />} />
             <Route path="/work-clock" element={<WorkOutClock />} />
             <Route path="/reactBasics" element={<ReactBasics />} />
             <Route path="/checkout" element={<CheckOutComponent />} />
+          </Routes>
+          <Routes>
+            <Route path="/memory-game" element={<MemoryGameComponent />} />
+
           </Routes>
           
         </div>
