@@ -10,8 +10,8 @@ const Banner = () => {
     <Carousel emulateTouch={true} autoPlay={true} infiniteLoop={true} interval={3000} showThumbs={false}>
       <div>
           <img className={bannerStyles.bannerImg} src={carShow} alt="A car exhibition" />
-        <div className={bannerStyles.heading}>Exhibition</div>
-        <div className={bannerStyles.desc}>Testing Carousel component</div>
+        <div className={bannerStyles.heading}>Testing Carousel Component</div>
+        <div className={bannerStyles.desc}>Exhibition</div>
         <div className={bannerStyles.cta}>Button</div>
       </div>
       <div>

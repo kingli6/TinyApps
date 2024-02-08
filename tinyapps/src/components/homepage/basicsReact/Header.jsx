@@ -7,7 +7,10 @@ const Header = () => {
   const {cartItems} = useContext(CartContext);
   return (
     <div className={headerStyles.headerContainer}>
+      <Link to="/reactBasics">
         <div className={headerStyles.logo}>Home?</div>
+      </Link>
+        
         <div className={headerStyles.nav}>
             <div className={headerStyles.navItem}>ItemB</div>
             <div className={headerStyles.navItem}>ItemC</div>

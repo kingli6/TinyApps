@@ -1,10 +1,11 @@
 import {useContext} from 'react';
 import CartContext from './services/CartContext';
-
+import Header from './Header';
 const CheckOutComponent = () => {
     const {cartItems} = useContext(CartContext);
   return (
     <div>
+      <Header/>
       <h2>Checkout</h2>
       <div >
         {cartItems.map((item) => (
