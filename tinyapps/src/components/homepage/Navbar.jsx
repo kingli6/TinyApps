@@ -1,20 +1,20 @@
 import { Link } from 'react-router-dom';
-
+import headerStyles from "../basicsReact/header.module.css"
 const Navbar = () => {
 
   return (
-    <nav className="bg-gray-800 p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-white font-bold text-lg">
-          Home
+    <nav className={headerStyles.headerContainer}>
+      
+        <Link to="/">
+        <div className={headerStyles.nav}>Home</div>
         </Link>
     
-        <div className="flex space-x-4">
-          <Link to="/contact" className="text-white">
+        <div className={headerStyles.nav}>
+          <Link to="/contact" >
             Contact
           </Link>
         </div>
-      </div>
+      
     </nav>
   );
 };

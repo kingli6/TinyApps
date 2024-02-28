@@ -2,6 +2,7 @@
     background-color: #2a2a2a;
     color: #fff;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 75px;
     position: relative;
@@ -39,7 +40,9 @@
     color: orange;
   }
   
-  .navItem:hover {
+  .nav:hover,
+  .cart:hover,
+  .login:hover  {
     border-bottom: 2px solid yellow;
   }
   

@@ -4,9 +4,10 @@ import HomePageComponent from './components/homepage/HomePageComponent';
 import ContactPage from './components/homepage/ContactPage';
 import MemoryGameComponent from './components/memoryGame/MemoryGameComponent';
 import WorkOutClock from './components/workOutClock/WorkOutClock';
-import ReactBasics from './components/homepage/basicsReact/ReactBasics'
-import { CartProvider } from './components/homepage/basicsReact/services/CartContext';
-import CheckOutComponent from './components/homepage/basicsReact/CheckOutComponent';
+import ReactBasics from './components/basicsReact/ReactBasics'
+import { CartProvider } from './components/basicsReact/services/CartContext';
+import CheckOutComponent from './components/basicsReact/CheckOutComponent';
+import TestPage1 from './components/testPage1/TestPage1';
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
             <Route path="/work-clock" element={<WorkOutClock />} />
             <Route path="/reactBasics" element={<ReactBasics />} />
             <Route path="/checkout" element={<CheckOutComponent />} />
+            <Route path="/testPage1" element={<TestPage1 />} />
           </Routes>
           <Routes>
             <Route path="/memory-game" element={<MemoryGameComponent />} />

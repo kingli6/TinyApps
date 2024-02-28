@@ -15,6 +15,9 @@ const BrowseAppsSection = () => {
           <Link to="/reactBasics" className="bg-yellow-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
             WebPageTemplate
           </Link>
+          <Link to="/testPage1" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
+            Testing...
+          </Link>
           {/* Add more buttons for other apps as needed */}
         </div>
       </div>

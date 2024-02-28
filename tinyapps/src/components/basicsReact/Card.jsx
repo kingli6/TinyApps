@@ -1,4 +1,4 @@
-import shirtOutline from '../../../assets/images/Skärmbild 2024-02-07 135023.png'
+import shirtOutline from '../../assets/images/Skärmbild 2024-02-07 135023.png'
 import productStyle from './product.module.css'
 import { useContext } from 'react';
 import CartContext from './services/CartContext';

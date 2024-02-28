@@ -8,16 +8,16 @@ const Header = () => {
   return (
     <div className={headerStyles.headerContainer}>
       <Link to="/reactBasics">
-        <div className={headerStyles.logo}>Home?</div>
+        <div className={headerStyles.logo}>ShopPage</div>
       </Link>
         
-        <div className={headerStyles.nav}>
+        {/* <div className={headerStyles.nav}>
             <div className={headerStyles.navItem}>ItemB</div>
             <div className={headerStyles.navItem}>ItemC</div>
-        </div>
+        </div> */}
         <Link to="/checkout" className={headerStyles.cart}>
             <img src={""} alt="" />
-            <span>Cart</span>
+            <span>Cart </span>
             <span>{cartItems.length}</span>
         </Link>
         <div className={headerStyles.login}>Login</div>

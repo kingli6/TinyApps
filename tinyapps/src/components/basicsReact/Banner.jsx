@@ -1,9 +1,9 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import bannerStyles from './banner.module.css';
-import carShow from '../../../assets/images/carExibitionMed.jpg' 
-import pebbels from '../../../assets/images/pebbelsMed.jpg' 
-import pilot from '../../../assets/images/FightPilotMed.jpg' 
+import carShow from '../../assets/images/carExibitionMed.jpg' 
+import pebbels from '../../assets/images/pebbelsMed.jpg' 
+import pilot from '../../assets/images/FightPilotMed.jpg' 
 
 const Banner = () => {
   return (
