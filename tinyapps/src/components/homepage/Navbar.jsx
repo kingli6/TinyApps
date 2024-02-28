@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className={headerStyles.headerContainer}>
       
         <Link to="/">
-        <div className={headerStyles.nav}>Home</div>
+        <div className={headerStyles.nav}>Tiny Apps</div>
         </Link>
     
         <div className={headerStyles.nav}>
