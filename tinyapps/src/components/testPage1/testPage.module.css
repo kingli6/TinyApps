@@ -1,16 +1,100 @@
-.parent {
-    border: 4px solid black;
-  
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.body {
+    height: 100vh;
+    background-color: #000;
+    background-image:url('https://img.freepik.com/free-photo/beautiful-milky-way-night-sky_53876-139825.jpg?t=st=1709821089~exp=1709824689~hmac=a8080492e7fda7dea35d0684439c8d2974719df68b612f17225792450798e852&w=740') ;
+    background-size: cover;
+    background-position: center;
 }
 
-.child {
-    border: 4px dashed green;
-    height: 50px;
-    width: 120px;
-    margin: 30px auto;
+li {
+    list-style: none;
 }
-.child p {
-    text-align: center;
-    font-size: 20px;
-    margin-top: 5px;
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: orange;
+}
+
+/* HEADER */
+.header {
+    border: 3px solid #73AD21;
+    /* position: relative; */
+    /* // padding here top/bot 0, right/left a pinky(2rem) spacing */
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: dotted black 2px ;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: orange;
+    font-size: 1rem;
+}
+
+.navbar a{
+    border: dotted pink 2px ;
+    /* padding-right: 50px; */
+    /* margin-right: 50px; */
+}
+
+.links li{
+    list-style: none;
+}
+
+.links a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1rem;
+}
+
+.links a:hover{
+    text-decoration: underline;
+    color: orange;
+}
+
+/* Positioning css example */
+.parent {
+    background: aquamarine;
+    height: 30vh;
+    width: 30vh;
+    padding: 1em;
+    border: solid grey 3px;
+    margin-top: 30em;
+}
+
+.child{
+    background:red;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top:0;
 }
