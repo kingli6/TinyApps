@@ -46,26 +46,24 @@
 .dropdown_menu {
   /* // we are hiding items */
   display: none;
-  height: 0;
-
-
   position: absolute;
   right: 2rem;
   top: 60px;
   width: 250px;
-  background: rbga(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
   border: solid green 3px;
 }
 
-.dropdown_menu.open{
-  height: 240px;
+.dropdown_menu.open {
+  display: block;
+  height: auto;
 }
-.dropdown_menu div{
+
+.dropdown_menu div {
   padding: 0.7rem;
   display: flex;
   align-items: center;
@@ -76,6 +74,7 @@
   .navbar .links{
     display: none;
   }
+  /* // what are .links? */
 
   .navbar .toggle_btn {
     display: block;

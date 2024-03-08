@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Apply box-sizing to all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Remove default list styles */
+ul {
+    list-style: none;
+}
+
+/* Apply global link styles */
+a {
+    text-decoration: none;
+}
