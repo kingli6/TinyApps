@@ -8,12 +8,14 @@ import ReactBasics from './components/basicsReact/ReactBasics'
 import { CartProvider } from './components/basicsReact/services/CartContext';
 import CheckOutComponent from './components/basicsReact/CheckOutComponent';
 import TestPage1 from './components/testPage1/TestPage1';
+import Header from './components/homepage/Header';
 function App() {
   return (
     <>
     <CartProvider>
       <BrowserRouter>
         <div className="flex flex-col min-h-screen">
+          <Header />
           <Navbar />
           
           <Routes>
