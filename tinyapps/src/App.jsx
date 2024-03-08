@@ -1,4 +1,3 @@
-import Navbar from './components/homepage/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePageComponent from './components/homepage/HomePageComponent';
 import ContactPage from './components/homepage/ContactPage';
@@ -8,7 +7,7 @@ import ReactBasics from './components/basicsReact/ReactBasics'
 import { CartProvider } from './components/basicsReact/services/CartContext';
 import CheckOutComponent from './components/basicsReact/CheckOutComponent';
 import TestPage1 from './components/testPage1/TestPage1';
-import Header from './components/homepage/Header';
+import Header from './components/homepage/navBar/Header';
 function App() {
   return (
     <>
@@ -16,7 +15,6 @@ function App() {
       <BrowserRouter>
         <div className="flex flex-col min-h-screen">
           <Header />
-          <Navbar />
           
           <Routes>
             <Route path="/" element={<HomePageComponent />} />

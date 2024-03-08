@@ -26,10 +26,7 @@ const TestPage1 = () => {
         <p>More text</p>
       </div>
     </positioning>
-      
-      <footer>
-
-      </footer>
+  
     </div>
   )
 }
