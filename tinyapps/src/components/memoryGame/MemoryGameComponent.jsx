@@ -14,7 +14,7 @@ const MemoryGameComponent = () => {
     <div>
         <StyleSheetManager shouldForwardProp={isPropValid}>
         <GlobalStyle />
-      <S.Logo />
+      {/* <S.Logo /> */}
       <S.CardContainer>
       {cards.map((c, i) => (
           <Card key={i} select={() => handleClick(i)} symbol={c.symbol} status={c.status} />

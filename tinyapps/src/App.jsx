@@ -23,9 +23,10 @@ function App() {
             <Route path="/reactBasics" element={<ReactBasics />} />
             <Route path="/checkout" element={<CheckOutComponent />} />
             <Route path="/testPage1" element={<TestPage1 />} />
+            <Route path="/memory-game" element={<MemoryGameComponent />} />
           </Routes>
           <Routes>
-            <Route path="/memory-game" element={<MemoryGameComponent />} />
+            
 
           </Routes>
           
